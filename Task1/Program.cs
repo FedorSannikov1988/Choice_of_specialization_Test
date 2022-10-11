@@ -99,3 +99,14 @@ bool ExaminationAmountSymbol(int namber)
     }
     return true;
 }
+
+bool ExaminationDimensionStringArray(int namber)
+{
+    if (namber <= 0)
+    {
+        System.Console.WriteLine("Введенные значения размерности вводимого массива string не должно быть меньше или равно нулю");
+        System.Console.WriteLine("Это не соотвевует условию поставленной задачи");
+        return false;
+    }
+    return true;
+}
