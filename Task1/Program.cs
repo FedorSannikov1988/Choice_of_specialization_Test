@@ -110,3 +110,34 @@ bool ExaminationDimensionStringArray(int namber)
     }
     return true;
 }
+
+int Dimension = InputDataInt(
+    "Введите размерность массива string подлежащего вводу и полседующей сортировке согласно условию задачи: "
+);
+
+int AmountSymbol = InputDataInt(
+    "Введите количество символов в одном элементе массива string для которых нужно создать новый массив string: "
+);
+
+if (ExaminationAmountSymbol(AmountSymbol) && ExaminationDimensionStringArray(Dimension))
+{
+    System.Console.WriteLine($"Вводите через Enter {Dimension} элементов массива string");
+
+    string[] InputStringArrayForSort = InputStringArray(Dimension);
+
+    System.Console.WriteLine("Выводим введенный массив string:");
+
+    PrintStringArray(InputStringArrayForSort);
+
+    string[] SortStringArray = СreateSortStringArray(
+        arrayString: InputStringArrayForSort,
+        longWords: AmountSymbol                     );
+
+    System.Console.WriteLine();
+
+    System.Console.WriteLine("Выводим сформированный согласно условию массив string:");
+
+    PrintStringArray(SortStringArray);
+}
+
+System.Console.Read();
