@@ -116,7 +116,7 @@ int Dimension = InputDataInt(
 );
 
 int AmountSymbol = InputDataInt(
-    "Введите количество символов в одном элементе массива string для которых нужно создать новый массив string: "
+    "Введите количество символов для сортировки элементов массива string (согласно жестко заданному условию задачи это 3): "
 );
 
 if (ExaminationAmountSymbol(AmountSymbol) && ExaminationDimensionStringArray(Dimension))
@@ -141,3 +141,5 @@ if (ExaminationAmountSymbol(AmountSymbol) && ExaminationDimensionStringArray(Dim
 }
 
 System.Console.Read();
+
+/* программа протестирована и работает */
