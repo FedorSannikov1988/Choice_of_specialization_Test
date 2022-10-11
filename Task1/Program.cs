@@ -27,3 +27,28 @@ int CalculationNeedDimensionArray(string[] arrayString, int longWords)
 
     return CountDimension;
 }
+
+string[] СreateSortStringArray(string[] arrayString, int longWords)
+{
+    string[] SortStringArray = new string[
+        CalculationNeedDimensionArray(arrayString: arrayString, longWords: longWords)
+    ];
+
+    string Byffer = String.Empty;
+
+    int CountElementNewArray = 0;
+
+    for (int i = 0; i < arrayString.Length; i++)
+    {
+        Byffer = arrayString[i];
+
+        if (Byffer.Length <= longWords)
+        {
+            SortStringArray[CountElementNewArray] = Byffer;
+
+            CountElementNewArray++;
+        }
+    }
+
+    return SortStringArray;
+}
