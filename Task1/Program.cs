@@ -77,3 +77,14 @@ string[] InputStringArray(int dimension)
 
     return InputStringArray;
 }
+
+int InputDataInt(string message)
+{
+    Console.Write(message);
+    bool isDigit = int.TryParse(Console.ReadLine(), out int numberInt);
+    if (isDigit)
+    {
+        return numberInt;
+    }
+    throw new Exception("Введенные Вами символы невозможно преобразовать в переменную Int32 !");
+}
