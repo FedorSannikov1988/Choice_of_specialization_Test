@@ -52,3 +52,11 @@ string[] СreateSortStringArray(string[] arrayString, int longWords)
 
     return SortStringArray;
 }
+
+void PrintStringArray(string[] arrayString)
+{
+    for (int i = 0; i < arrayString.Length; i++)
+    {
+        System.Console.Write($"{arrayString[i]}\t");
+    }
+}
