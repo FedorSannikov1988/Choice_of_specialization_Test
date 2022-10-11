@@ -88,3 +88,14 @@ int InputDataInt(string message)
     }
     throw new Exception("Введенные Вами символы невозможно преобразовать в переменную Int32 !");
 }
+
+bool ExaminationAmountSymbol(int namber)
+{
+    if (namber <= 0)
+    {
+        System.Console.WriteLine("Введенные значения количества символов не должно быть меньше или равно нулю");
+        System.Console.WriteLine("Это не соотвевует условию поставленной задачи");
+        return false;
+    }
+    return true;
+}
