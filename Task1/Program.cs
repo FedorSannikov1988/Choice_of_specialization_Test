@@ -60,3 +60,8 @@ void PrintStringArray(string[] arrayString)
         System.Console.Write($"{arrayString[i]}\t");
     }
 }
+
+string InputElementStringArray()
+{
+    return (Console.ReadLine() ?? "0");
+}
