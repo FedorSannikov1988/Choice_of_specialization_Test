@@ -8,3 +8,22 @@
 Примеры:
 ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
 */
+
+int CalculationNeedDimensionArray(string[] arrayString, int longWords)
+{
+    string Byffer = String.Empty;
+
+    int CountDimension = 0;
+
+    for (int i = 0; i < arrayString.Length; i++)
+    {
+        Byffer = arrayString[i];
+
+        if (Byffer.Length <= longWords)
+        {
+            CountDimension++;
+        }
+    }
+
+    return CountDimension;
+}
