@@ -65,3 +65,15 @@ string InputElementStringArray()
 {
     return (Console.ReadLine() ?? "0");
 }
+
+string[] InputStringArray(int dimension)
+{
+    string[] InputStringArray = new string[dimension];
+
+    for (int i = 0; i < dimension; i++)
+    {
+        InputStringArray[i] = InputElementStringArray();
+    }
+
+    return InputStringArray;
+}
